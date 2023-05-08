@@ -1,0 +1,56 @@
+﻿<Window x:Class="Socket_4I.AggiungiContatto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socket_4I"
+        mc:Ignorable="d"
+        Title="AggiungiContatto" Height="450" Width="800" Closing="ChiudiFinestra">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="" HorizontalAlignment="Left" Height="362" Margin="27,39,0,0" VerticalAlignment="Top" Width="745" Background="#FFA1B2DB" Opacity="0.5"/>
+        <Label Content="AGGIUNGI CONTATTO" HorizontalAlignment="Left" Height="69" Margin="219,10,0,0" VerticalAlignment="Top" Width="396" Background="#FFA1B2DB" FontSize="36" FontFamily="Lucida Sans Unicode" BorderBrush="#FF004AE4"/>
+        <Label Content="NOME" HorizontalAlignment="Left" Height="41" Margin="40,114,0,0" VerticalAlignment="Top" Width="103" Background="#FFA1B2DB" FontSize="18"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="649" Margin="253,-164,0,0" VerticalAlignment="Top" Width="0" Background="#FFA1B2DB" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.648" ScaleX="1.542"/>
+                    <SkewTransform AngleX="0.079"/>
+                    <RotateTransform Angle="-90.057"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txt_username" HorizontalAlignment="Left" Height="41" Margin="195,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" Background="#FFBEC5D0" BorderBrush="#FF3565F7"/>
+        <Label Content="USERNAME *" HorizontalAlignment="Left" Height="41" Margin="40,114,0,0" VerticalAlignment="Top" Width="122" Background="#FFA1B2DB" FontSize="18" FontFamily="Lucida Sans Unicode"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="649" Margin="253,-94,0,0" VerticalAlignment="Top" Width="0" Background="#FFA1B2DB" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.648" ScaleX="1.542"/>
+                    <SkewTransform AngleX="0.079"/>
+                    <RotateTransform Angle="-90.057"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="INDIRIZZO *" HorizontalAlignment="Left" Height="41" Margin="40,184,0,0" VerticalAlignment="Top" Width="122" Background="#FFA1B2DB" FontSize="18" FontFamily="Lucida Sans Unicode"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="649" Margin="253,-24,0,0" VerticalAlignment="Top" Width="0" Background="#FFA1B2DB" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.648" ScaleX="1.542"/>
+                    <SkewTransform AngleX="0.079"/>
+                    <RotateTransform Angle="-90.057"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txt_descrizione" HorizontalAlignment="Left" Height="41" Margin="195,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" Background="#FFBEC5D0" BorderBrush="#FF2756E2"/>
+        <Label Content="DESCRIZIONE" HorizontalAlignment="Left" Height="41" Margin="40,254,0,0" VerticalAlignment="Top" Width="122" Background="#FFA1B2DB" FontSize="18" FontFamily="Lucida Sans Unicode"/>
+        <Button x:Name="btn_aggiungiContatto" Content="AGGIUNGI " HorizontalAlignment="Left" Height="52" Margin="40,340,0,0" VerticalAlignment="Top" Width="707" Background="#FF5D73A3" Click="btn_aggiungiContatto_Click" FontFamily="Lucida Sans Unicode" FontSize="22"/>
+        <ListBox x:Name="lst_contatti" HorizontalAlignment="Left" Height="181" Margin="521,114,0,0" VerticalAlignment="Top" Width="226" Background="#FFDBE2EB" BorderBrush="#FF1B4FEB"/>
+        <Label x:Name="lbl_indirizzo" Content="127.0.0.1" HorizontalAlignment="Left" Height="41" Margin="195,184,0,0" VerticalAlignment="Top" Width="294" Background="#FFBEC5D0" BorderBrush="#FF147FC6" Foreground="#FF0F2CA0" FontSize="20"/>
+
+    </Grid>
+</Window>
